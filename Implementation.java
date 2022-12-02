@@ -50,10 +50,7 @@ public class Implementation implements Show_remainder, New_remainder {
                 System.out.println("-------------------------------------------------");
             }
         }
-       /*  if(null!=d &&d.trim().length() > 0)
-        {
-            date = format.parse(d);
-        }*/
+       
         //Asking for the file name
         
         System.out.print("Enter the file name: ");
@@ -201,9 +198,7 @@ public class Implementation implements Show_remainder, New_remainder {
 
             File file = new File("E:\\Dhwani\\Programming_Languages\\Java\\Java_Project\\src\\sem_project\\Tasks\\" +contents[i]);
             Scanner out = new Scanner(file);
-            //SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
-            //Date date = new Date();
-            //String Today = formatter.format(date);
+            
             String check = out.nextLine();
             //checking if input date equals file date
             
@@ -259,12 +254,15 @@ public class Implementation implements Show_remainder, New_remainder {
     {
         //storing the path of files in directoryPath 
         File directoryPath = new File("E:\\Dhwani\\Programming_Languages\\Java\\Java_Project\\src\\sem_project\\Tasks\\");
+        
         //List of all files and directories
         String contents[] = directoryPath.list();
         System.out.println("-------------------------------------------------");
         System.out.println("List of files of remainders/tasks:");
+        
          //fetching the list of files from the directory
          for(int i=0; i<contents.length; i++) {
+             
             //File file = new File("E:\\Dhwani\\Programming_Languages\\Java\\Java_Project\\src\\sem_project\\Tasks\\" +contents[i]);
             System.out.println(contents[i]);
         }
